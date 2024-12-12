@@ -1,0 +1,39 @@
+/* .milonga-regular {
+    font-family: "Milonga", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+.logo-img {
+  max-width: 8%;
+  margin: 12px 28px 12px 20px;
+}
+.logo-brand {
+  font-family: "Milonga", serif;
+  font-size: 2.75rem;
+  font-weight: 600;
+  color: #fffbf3;
+}
+
+.logo-brand:hover {
+  color: #ffbd59;
+}
+
+.entire-bar {
+  background: rgb(74, 40, 32);
+  background: linear-gradient(
+    180deg,
+    rgba(74, 40, 32, 1) 0%,
+    rgba(74, 40, 32, 0.4542191876750701) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.nav-link {
+  color: #fffbf3;
+  margin-right: 20px;
+}
+
+.nav-link:hover {
+  color: #ffbd59;
+}
