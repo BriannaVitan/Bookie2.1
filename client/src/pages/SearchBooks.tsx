@@ -98,7 +98,7 @@ const SearchBooks = () => {
 
   return (
     <>
-      <video src={video} muted loop autoPlay></video>
+      {/* <video src={video} muted loop autoPlay></video> */}
       {/* Video by Maksim Smirnov from Pexels: https://www.pexels.com/video/a-large-library-with-many-books-on-shelves-18969594/ */}
       <div className="overlay"></div>
       <div className="search-header">
