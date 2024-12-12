@@ -1,12 +1,102 @@
-// import React, { useState } from "react";
-// import { BookReviewsProps, NewReview } from "./Types";
-// import "./BookReviews.css";
+import React, { useState } from "react";
+import { BookReviewsProps, NewReview, BookReview } from "./Types"; // Ensure BookReview type is imported
+import "./BookReviews.css";
+
+const initialNewReview: NewReview = {
+  title: "",
+  author: "",
+  rating: 5,
+  comment: "",
+};
+
+const BookReviews: React.FC<BookReviewsProps> = ({ initialReviews = [] }) => {
+  const [reviews, setReviews] = useState<BookReview[]>(initialReviews);
+  const [newReview, setNewReview] = useState<NewReview>(initialNewReview);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const reviewToAdd: BookReview = {
+      ...newReview,
+      id: Date.now(), // Or consider a better unique id strategy, like UUID
+    };
+
+    setReviews([...reviews, reviewToAdd]);
+    setNewReview(initialNewReview); // Reset the form after submission
+  };
+
+  return (
+    <div className="book-reviews">
+      <h1>Book Reviews</h1>
+
+      <form onSubmit={handleSubmit} className="review-form">
+        <input
+          type="text"
+          placeholder="Book Title"
+          value={newReview.title}
+          onChange={(e) =>
+            setNewReview({ ...newReview, title: e.target.value })
+          }
+          required
+        />
+        <input
+          type="text"
+          placeholder="Author"
+          value={newReview.author}
+          onChange={(e) =>
+            setNewReview({ ...newReview, author: e.target.value })
+          }
+          required
+        />
+        <select
+          value={newReview.rating}
+          onChange={(e) =>
+            setNewReview({ ...newReview, rating: parseInt(e.target.value) })
+          }
+        >
+          {[1, 2, 3, 4, 5].map((num) => (
+            <option key={num} value={num}>
+              {num} Stars
+            </option>
+          ))}
+        </select>
+        <textarea
+          placeholder="Your Review"
+          value={newReview.comment}
+          onChange={(e) =>
+            setNewReview({ ...newReview, comment: e.target.value })
+          }
+          required
+        />
+        <button type="submit">Add Review</button>
+      </form>
+
+      <div className="review-list">
+        {reviews.map((review) => (
+          <div key={review.id} className="review-card">
+            <h3>{review.title}</h3>
+            <h4>by {review.author}</h4>
+            <div className="rating">{"⭐".repeat(review.rating)}</div>
+            <p>{review.comment}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default BookReviews;
+
+// import React, { useState } from 'react';
+// // export default BookReviews;
+// import { BookReviewsProps, NewReview } from './Types';
+// import './BookReviews.css';
 
 // const initialNewReview: NewReview = {
-//   title: "",
-//   author: "",
+//   title: '',
+//   author: '',
 //   rating: 5,
-//   comment: "",
+//   comment: ''
 // };
 
 // const BookReviews: React.FC<BookReviewsProps> = ({ initialReviews = [] }) => {
@@ -28,49 +118,39 @@
 //           type="text"
 //           placeholder="Book Title"
 //           value={newReview.title}
-//           onChange={(e) =>
-//             setNewReview({ ...newReview, title: e.target.value })
-//           }
+//           onChange={(e) => setNewReview({...newReview, title: e.target.value})}
 //           required
 //         />
 //         <input
 //           type="text"
 //           placeholder="Author"
 //           value={newReview.author}
-//           onChange={(e) =>
-//             setNewReview({ ...newReview, author: e.target.value })
-//           }
+//           onChange={(e) => setNewReview({...newReview, author: e.target.value})}
 //           required
 //         />
 //         <select
 //           value={newReview.rating}
-//           onChange={(e) =>
-//             setNewReview({ ...newReview, rating: parseInt(e.target.value) })
-//           }
+//           onChange={(e) => setNewReview({...newReview, rating: parseInt(e.target.value)})}
 //         >
-//           {[1, 2, 3, 4, 5].map((num) => (
-//             <option key={num} value={num}>
-//               {num} Stars
-//             </option>
+//           {[1,2,3,4,5].map(num => (
+//             <option key={num} value={num}>{num} Stars</option>
 //           ))}
 //         </select>
 //         <textarea
 //           placeholder="Your Review"
 //           value={newReview.comment}
-//           onChange={(e) =>
-//             setNewReview({ ...newReview, comment: e.target.value })
-//           }
+//           onChange={(e) => setNewReview({...newReview, comment: e.target.value})}
 //           required
 //         />
 //         <button type="submit">Add Review</button>
 //       </form>
 
 //       <div className="review-list">
-//         {reviews.map((review) => (
+//         {reviews.map(review => (
 //           <div key={review.id} className="review-card">
 //             <h3>{review.title}</h3>
 //             <h4>by {review.author}</h4>
-//             <div className="rating">{"⭐".repeat(review.rating)}</div>
+//             <div className="rating">{'⭐'.repeat(review.rating)}</div>
 //             <p>{review.comment}</p>
 //           </div>
 //         ))}

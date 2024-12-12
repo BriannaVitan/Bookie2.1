@@ -14,7 +14,7 @@
 <div align="center">
   <a href="https://github.com/BriannaVitan/Bookie2.1.git">
   <!--  Correct this file path to a logo if you would like one; otherwise, delete this a href -->
-    <img src="HOMEPAGE PIC" alt="Logo" width="80" height="80">
+    <img src="./client/src/assets/My Bookie.webp" alt="Logo" width="280" height="280">
   </a>
 
 <!--  Edit App name -->
@@ -22,20 +22,19 @@
 
   <p align="center">
   <!--  Edit App description -->
-    As an user I find it discouraging finding a good book to read. 
-I want users to have the ultimate book review web app designed for passionate readers!
-With this app users can search for books, read reviews, and add their own reviews. This will help users find books that they will enjoy while connecting with a vibrant community that shares the same love for literature
+    As a passionate reader, I want to have a reliable platform where I can rate and save my favorite books, so that I can make informed decisions about my next read and explore insights from fellow book enthusiasts. This app  allows users can search for books, read reviews, and add their own reviews. This will help users find books that they will enjoy while connecting with a vibrant community that shares the same love for literature
+
 <!-- PROJECT LOGO -->
 <br />
-    <a href="https://github.com/BriannaVitan/Job-search-buddy"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/BriannaVitan/Bookie2.1.git"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <!-- Edit deployment link -->
     <a href="">View Demo(Coming Soon)</a>
     ·
-    <a href="https://github.com/BriannaVitan/Job-search-buddy/issues">Report Bug</a>
+    <a href="https://github.com/BriannaVitan/Bookie2.1/issues">Report Bug</a>
     ·
-    <a href="https://github.com/BriannaVitan/Job-search-buddy/issues">Request Feature</a>
+    <a href="https://github.com/BriannaVitan/Bookie2.1/issues">Request Feature</a>
 
   </p>
 </div>
@@ -214,4 +213,4 @@ Project Links:
 
 <!-- add your deployment link here -->
 
-[Deployment]()
+[Deployment](https://bookie2-1.onrender.com/)
