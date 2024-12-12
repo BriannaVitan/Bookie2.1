@@ -22,9 +22,8 @@
 
   <p align="center">
   <!--  Edit App description -->
-    As a passionate reader, I want to have a reliable platform where I can rate and save my favorite books, so that I can make informed decisions about my next read and explore insights from fellow book enthusiasts.
+    As a passionate reader, I want to have a reliable platform where I can rate and save my favorite books, so that I can make informed decisions about my next read and explore insights from fellow book enthusiasts. This app  allows users can search for books, read reviews, and add their own reviews. This will help users find books that they will enjoy while connecting with a vibrant community that shares the same love for literature
 
-    This app  allows users can search for books, read reviews, and add their own reviews. This will help users find books that they will enjoy while connecting with a vibrant community that shares the same love for literature
 <!-- PROJECT LOGO -->
 <br />
     <a href="https://github.com/BriannaVitan/Bookie2.1.git"><strong>Explore the docs »</strong></a>
