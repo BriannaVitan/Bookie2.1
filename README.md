@@ -14,7 +14,7 @@
 <div align="center">
   <a href="https://github.com/BriannaVitan/Bookie2.1.git">
   <!--  Correct this file path to a logo if you would like one; otherwise, delete this a href -->
-    <img src="./client/src/assets/My Bookie.webp" alt="Logo" width="180" height="180">
+    <img src="./client/src/assets/My Bookie.webp" alt="Logo" width="280" height="280">
   </a>
 
 <!--  Edit App name -->
