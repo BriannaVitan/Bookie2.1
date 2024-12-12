@@ -163,9 +163,9 @@ const SearchBooks = () => {
                             handleRateBook(book.bookId, rating)
                           }
                         />
-                        <span className="rating-count ms-2">
-                          ({book.totalRatings} ratings)
-                        </span>
+                        {/* <span className="rating-count ms-2">  
+                           ({book.totalRatings} ratings)  
+                         </span>   */}
                       </>
                     )}
                     <Button
