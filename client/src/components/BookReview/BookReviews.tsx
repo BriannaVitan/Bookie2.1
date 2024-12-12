@@ -77,7 +77,6 @@ const BookReviews: React.FC<BookReviewsProps> = ({ initialReviews = [] }) => {
 
 export default BookReviews;
 
-
 // import React, { useState } from 'react';
 // // export default BookReviews;
 // import { BookReviewsProps, NewReview } from './Types';
