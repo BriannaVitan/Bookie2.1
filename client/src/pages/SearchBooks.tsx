@@ -10,6 +10,7 @@ import type { Book } from "../models/Book";
 import type { GoogleAPIBook } from "../models/GoogleAPIBook";
 import { SAVE_BOOK } from "../utils/mutations";
 import StarRating from "../components/StarRating/StarRating";
+import "./pages.css";
 
 const SearchBooks = () => {
   // create state for holding returned google api data
@@ -108,33 +109,45 @@ const SearchBooks = () => {
 
   return (
     <>
-      <div className="text-light bg-dark p-5">
+      <div className="text-light container-fluid overflow-auto p-5">
         <Container>
-          <h1>Search for Books!</h1>
-          <Form onSubmit={handleFormSubmit}>
-            <Row>
-              <Col xs={12} md={8}>
-                <Form.Control
-                  name="searchInput"
-                  value={searchInput}
-                  onChange={(e) => setSearchInput(e.target.value)}
-                  type="text"
-                  size="lg"
-                  placeholder="Search for a book"
-                />
-              </Col>
-              <Col xs={12} md={4}>
-                <Button type="submit" variant="success" size="lg">
-                  Submit Search
-                </Button>
-              </Col>
-            </Row>
-          </Form>
+          <div className="d-flex align-items-center justify-content-center gap-5">
+            <h1 className="font-weight-bold">
+              Take a gamble on your next best read!
+            </h1>
+            <img
+              className="img-fluid w-25 rounded-circle mt-0"
+              src="/librarian.png"
+            ></img>
+          </div>
+          <div className="overlay"></div>
+          <img className="bg" src="/bg.png"></img>
+          <div className="search-bar">
+            <Form className="mt-4" onSubmit={handleFormSubmit}>
+              <Row>
+                <Col xs={12} md={8}>
+                  <Form.Control
+                    name="searchInput"
+                    value={searchInput}
+                    onChange={(e) => setSearchInput(e.target.value)}
+                    type="text"
+                    size="lg"
+                    placeholder="Search for a book"
+                  />
+                </Col>
+                <Col xs={12} md={4}>
+                  <Button type="submit" variant="success" size="lg">
+                    Submit Search
+                  </Button>
+                </Col>
+              </Row>
+            </Form>
+          </div>
         </Container>
       </div>
 
       <Container>
-        <h2 className="pt-5">
+        <h2 className="text-light text-center pt-5">
           {searchedBooks.length
             ? `Viewing ${searchedBooks.length} results:`
             : "Search for a book to begin"}
