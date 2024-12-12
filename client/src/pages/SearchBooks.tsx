@@ -9,8 +9,8 @@ import { saveBookIds, getSavedBookIds } from "../utils/localStorage";
 import type { Book } from "../models/Book";
 import type { GoogleAPIBook } from "../models/GoogleAPIBook";
 import { SAVE_BOOK } from "../utils/mutations";
-import mascot from "../assets/A_librarian_dressed_as_a_gambler.png";
-import video from "../assets/Library.mp4";
+// import mascot from "/A_librarian_dressed_as_a_gambler.png";
+// import video from "../assets/Library.mp4";
 import "./pages.css";
 
 const SearchBooks = () => {
@@ -105,7 +105,10 @@ const SearchBooks = () => {
         <Container>
           <div className="text-pic">
             <h1 className="motto">Take a gamble on your next great read!</h1>
-            <img className="mascot" src={mascot}></img>
+            <img
+              className="mascot"
+              src="/A_librarian_dressed_as_a_gambler.png"
+            ></img>
           </div>
           <div className="search-bar">
             <Form onSubmit={handleFormSubmit}>

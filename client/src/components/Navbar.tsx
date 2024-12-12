@@ -4,7 +4,7 @@ import { Navbar, Nav, Container, Modal, Tab } from "react-bootstrap";
 import SignUpForm from "./SignupForm";
 import LoginForm from "./LoginForm";
 import "./Navbar.css";
-import Logo from "../assets/MLB-logo.png";
+// import logo from "./MLB-logo.png";
 import Auth from "../utils/auth";
 
 const AppNavbar = () => {
@@ -15,7 +15,7 @@ const AppNavbar = () => {
     <>
       <Navbar className="entire-bar" expand="lg">
         <Container fluid>
-          <img className="logo-img" src={Logo}></img>
+          <img className="logo-img" src="/MLB-logo.png"></img>
           <Navbar.Brand as={Link} to="/" className="logo-brand">
             My Library Bookie
           </Navbar.Brand>
