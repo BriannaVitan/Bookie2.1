@@ -1,37 +1,40 @@
 <div align="center">
 
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Contributors](https://img.shields.io/github/contributors/404pandas/project-2-setup-guide.svg?style=plastic&logo=appveyor)
-![Forks](https://img.shields.io/github/forks/404pandas/project-2-setup-guide.svg?style=plastic&logo=appveyor)
-![Stargazers](https://img.shields.io/github/stars/404pandas/project-2-setup-guide.svg?style=plastic&logo=appveyor)
-![Issues](https://img.shields.io/github/issues/404pandas/project-2-setup-guide.svg?style=plastic&logo=appveyor)
+[![Contributors](https://img.shields.io/github/contributors/404pandas/project-2-setup-guide.svg?style=plastic&logo=appveyor)
+[![Forks](https://img.shields.io/github/forks/404pandas/project-2-setup-guide.svg?style=plastic&logo=appveyor)
+[![Stargazers](https://img.shields.io/github/stars/404pandas/project-2-setup-guide.svg?style=plastic&logo=appveyor)
+[![Issues](https://img.shields.io/github/issues/404pandas/project-2-setup-guide.svg?style=plastic&logo=appveyor)
 
 </div>
 
 
+
 <div align="center">
-  <a href="https://github.com/BriannaVitan/Book-Search-Engine">
+  <a href="https://github.com/BriannaVitan/Bookie2.1.git">
   <!--  Correct this file path to a logo if you would like one; otherwise, delete this a href -->
+    <img src="./client/src/assets/My Bookie.webp" alt="Logo" width="280" height="280">
   </a>
 
 <!--  Edit App name -->
-  <h3 align="center">Book Search Engine</h3>
+  <h3 align="center">My Library Bookie</h3>
 
   <p align="center">
   <!--  Edit App description -->
-    This application allows users to search a database of books using GoogleBook API search engine to save or remove books from their library. Users are able to login or signup with their username, email and password. 
+    As a passionate reader, I want to have a reliable platform where I can rate and save my favorite books, so that I can make informed decisions about my next read and explore insights from fellow book enthusiasts. This app  allows users can search for books, read reviews, and add their own reviews. This will help users find books that they will enjoy while connecting with a vibrant community that shares the same love for literature
+
 <!-- PROJECT LOGO -->
 <br />
-    <a href="https://github.com/BriannaVitan/Book-Search-Engine"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/BriannaVitan/Bookie2.1.git"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <!-- Edit deployment link -->
-    <a href="https://drive.google.com/file/d/146-DgIhz8NoxZbCiIisfEf2StTsWHIvA/view?usp=drive_link
-">Video Demo</a>
+    <a href="">View Demo(Coming Soon)</a>
     ·
-    <a href="https://github.com/BriannaVitan/Book-Search-Engine/issues">Report Bug</a>
+    <a href="https://github.com/BriannaVitan/Bookie2.1/issues">Report Bug</a>
     ·
-    <a href="https://github.com/BriannaVitan/Book-Search-Engine/issues">Request Feature</a>
+    <a href="https://github.com/BriannaVitan/Bookie2.1/issues">Request Feature</a>
 
   </p>
 </div>
@@ -53,10 +56,11 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#project-link">Project Link</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -70,7 +74,7 @@
 <!-- Add video demos using the following format: -->
 <!-- ![Video alt description](directPathOfVideos) -->
 
-This project was built using the MERN stack with a React front end, Restful API, GraphQL API, ApolloServer, MongoDB database, Render, Node.js/Express.js server and API.
+This project was built using Node, Express, Handlebars, PostgreSQL, and Sequelize.
 
 ### Built With
 
@@ -93,8 +97,7 @@ This project was built using the MERN stack with a React front end, Restful API,
 [![Sequelize](https://img.shields.io/badge/Package-Sequelize-6c5ce7?style=plastic&logo=sequelize&logoWidth=10)](https://sequelize.org/)
 [![Nodemon](https://img.shields.io/badge/DevDependency-Nodemon-d63031?style=plastic&logo=nodemon&logoWidth=10)](https://www.npmjs.com/package/nodemon)
 [![JWT](https://img.shields.io/badge/Package-JWT-000000?style=plastic&logo=jsonwebtokens&logoWidth=10)](https://jwt.io/)
-[![MongoDb](https://img.shields.io/badge/Framework-MongoDb-80ff00?style=plastic&logo=MongoDb&logoWidth=10)](https://MongoDbjs.com/)
-[![ApolloServer](https://img.shields.io/badge/Framework-ApolloServer-ffff00?style=plastic&logo=ApolloServer&logoWidth=10)](https://nodejs.org/en/)
+
 
 </div>
 
@@ -109,7 +112,7 @@ Once completely built, this application will function as a deployed app on Rende
 1. Clone the rep
 
 ```
-git clone https://github.com/BriannaVitan/Book-Search-Engine
+git clone https://github.com/BriannaVitan/Job-search-buddy
 ```
 
 2. Install dependencies
@@ -118,28 +121,56 @@ git clone https://github.com/BriannaVitan/Book-Search-Engine
 npm i
 ```
 
-3. Build the database
+3. Seed the database
 
 ```
-npm run build
+npm run seed
 ```
 
 4. Launch the app in development environment
 
 ```
-npm run start:dev
+npm run start
 ```
 
 5. Visit app:
 
 [http://localhost:3001/](http://localhost:3001/)
 
+<!-- ROADMAP -->
 
 
-See the [open issues](https://github.com/BriannaVitan/Book-Search-Engine/issues) for a full list of proposed features (and known issues).
 
-## Usage 
-![alt text](<Assets/Book Search Engine.png>)
+#### MVP
+
+<!-- This is a nested check-box that displays a nice checked or unchecked list on your Github repo to show your visitor's a quick road map! -->
+
+- [ ] Front End
+
+  - [ ] User Auth
+  - [ ] User Profile Page
+    - [ ] Routing
+    - [ ] Styling
+  - [ ] Landing Page
+    - [ ] Routing
+    - [ ] Styling
+
+- [ ] Back End
+  - [ ] User Auth
+  - [ ] Models
+  - [ ] Seeds
+  - [ ] api Routing
+
+#### Future Development
+
+- [ ] Add Lines of future development ideas here
+- [ ] Add Lines of future development ideas here
+- [ ] Add Lines of future development ideas here
+
+See the [open issues](https://github.com/BriannaVitan/Bookie2.1.git) for a full list of proposed features (and known issues).
+
+  <img src="">
+
 <!-- CONTRIBUTING -->
 
 ## Contributing
@@ -169,13 +200,17 @@ This project is licensed under the MIT license.
 
 [Brianna Vitan]() - briannavitan@gmail.com
 
+[Melody Valentine]() - melodyvalentine9@gmail.com
+
+[Matthew Chance]() - matt.chance176@gmail.com
+
+[Katrina Moody]() - kmfoster212@gmail.com
 
 
-## Project Links:
+Project Links:
 
-[Github Repository](https://github.com/BriannaVitan/Book-Search-Engine)
+[Github Repository](https://github.com/BriannaVitan/Bookie2.1.git)
 
 <!-- add your deployment link here -->
 
-[Deployment](https://book-search-engine-19tf.onrender.com)
-
+[Deployment](https://bookie2-1.onrender.com/)
